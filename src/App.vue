@@ -2,7 +2,7 @@
   <div id="app">
     <div class="wrapper">
       <div class="header d-flex justify-content-between align-items-end">
-        <h1 class="uppercase red">Client Review</h1>
+        <h1 class="uppercase red">Vue Project 1</h1>
         <div class="logo"></div>
       </div>
     
@@ -62,7 +62,7 @@ ul {
 /* END GENERAL STYLES */
 
 body {
-  background: url(images/bg_repeat.jpg) 0 0;
+  /* background: url(images/bg_repeat.jpg) 0 0; */
   overflow-y: scroll;
 }
 h1 {
@@ -91,7 +91,7 @@ h3 {
   padding: 50px 0;
 }
 .logo {
-  background: url(images/tlgLogo.gif) no-repeat 0 0;
+  /* background: url(images/tlgLogo.gif) no-repeat 0 0; */
   background-size: cover;
   width: 164px;
   height: 114px;
