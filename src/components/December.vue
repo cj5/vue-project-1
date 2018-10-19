@@ -1,37 +1,37 @@
 <template>
   <div class="level-1">
-    <a class="heading collapsed" data-toggle="collapse" href="#december" role="button" aria-expanded="false" aria-controls="collapseExample">
-      <h2>december</h2>
+    <a class="heading collapsed" data-toggle="collapse" :href="'#'+category" role="button" aria-expanded="false" aria-controls="collapseExample">
+      <h2>{{ category }}</h2>
     </a>
-    <div class="collapse" id="december">
+    <div class="collapse" :id="category">
       <Campaign
-        id="december-campaign-1"
         title="Campaign 1"
-        subheading="Sub-heading 1"
         :link="[
-          { link: 'View Email 1', url: 'http://chrisstack.co' },
-          { link: 'View Email 2', url: 'http://reddit.com' },
+          { heading: 'Heading test', subheading: 'Subheading', link: 'View Email 1', url: 'http://chrisstack.co' },
+          { heading: 'TEST', link: 'View Email 2', url: 'http://reddit.com' },
           { link: 'View Email 3', url: 'http://reddit.com' },
         ]"
       />
       <Campaign
-        id="december-campaign-2"
         title="Campaign 2"
-        subheading="Sub-heading 2"
         :link="[
-          { link: 'View Email 1', url: 'http://chrisstack.co' },
+          { heading: 'Testeroni', link: 'View Email 1', url: 'http://chrisstack.co' },
           { link: 'View Email 2', url: 'http://reddit.com' },
         ]"
       />
     </div>
-  </div>  
+  </div>
 </template>
 
 <script>
-import Campaign from './Campaign.vue';
+import Campaign from './Campaign';
 
 export default {
-  name: 'December',
-  components: { Campaign }
+  data: () => {
+    return {
+      category: 'december'
+    }
+  },
+  components: { Campaign },
 };
 </script>

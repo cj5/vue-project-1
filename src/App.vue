@@ -9,6 +9,8 @@
       <div class="accordion">
         <Ongoing />
         <December />
+        <November />
+        <October />
       </div>
     </div>
   </div>
@@ -17,12 +19,15 @@
 <script>
 import Ongoing from "./components/Ongoing";
 import December from "./components/December";
+import November from "./components/November";
+import October from "./components/October";
 
 export default {
-  name: "App",
   components: {
     Ongoing,
-    December
+    December,
+    November,
+    October
   }
 };
 </script>
@@ -145,7 +150,7 @@ h3 {
   color: #777;
 }
 .email-links {
-  padding-left: 60px;
+  padding-left: 70px;
 }
 .email-links ul {
   margin-bottom: 10px;
@@ -159,28 +164,21 @@ h3 {
 .email-links a {
   margin-left: 12px;
   font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 4px;
   color: #cf152d;
   transition: all 0.2s ease-in-out;
   border-bottom: 1px solid transparent;
 }
 .email-links a:hover {
-  /*color: #000;*/
   border-bottom: 1px solid #cf152d;
-}
-/*.email-links a::after {
-  content: ">";
-  left: 5px;
-  position: relative;
-  transition: all 0.2s ease-in-out;
-}*/
-.email-links a:hover::after {
-  /*left: 10px;*/
-  /*color: #000;*/
 }
 .email-links p {
   font-size: 14px;
-  font-weight: bold;
   margin: 0;
+}
+.bold {
+  font-weight: bold;
 }
 
 </style>
